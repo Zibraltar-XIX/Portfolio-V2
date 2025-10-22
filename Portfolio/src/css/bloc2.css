@@ -1,0 +1,51 @@
+.bloc2 {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 5% 2%;
+}
+
+.bloc2 h1 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 50px 0;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+  }
+  to {
+    text-shadow: 0 0 30px rgba(0, 212, 255, 1), 0 0 40px rgba(0, 212, 255, 0.8);
+  }
+}
+
+/* Container principal des compétences */
+.skills-container {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .bloc2 {
+    padding: 5% 5%;
+    }
+
+  .bloc2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+}
