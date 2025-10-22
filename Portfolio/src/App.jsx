@@ -24,7 +24,6 @@ function App() {
   }, []);
 
   const AllData = Api();
-  console.log("AllData:", AllData);
 
   // On utilise l'opérateur de coalescence nulle pour éviter undefined
   const profil = AllData[0] || {};
@@ -34,7 +33,6 @@ function App() {
 
   const DescriptionProfil = profil.description || "Chargement";
   const Description = profil.long_description || "Chargement";
-  console.log("Description du profil:", DescriptionProfil);
 
   // Utiliser useMemo pour éviter de recalculer à chaque rendu
   const skillsData = useMemo(() => {
