@@ -6,7 +6,6 @@
     flex-direction: row ;
 }
 
-
 .hero-image {
     flex: 1;
     display: flex;
@@ -70,6 +69,7 @@
     line-height: 1.1;
     color: #ffffff;
     margin-bottom: 5%;
+    text-align: justify-all;
 }
 
 .hero-text .highlight {
@@ -139,13 +139,14 @@
         flex-direction: column;
         padding: 0 5%;
         justify-content: center;
-        gap: 20px;
         min-height: 0;
+        height: auto;
+        margin-bottom: 10vh;
     }
 
   .hero-container {
+      width: 100%;
     grid-template-columns: 1fr;
-    gap: 40px;
     text-align: center;
   }
 
@@ -154,7 +155,6 @@
     max-width: 100%;
     padding: 2%;
     text-align: center;
-    margin-top: 30px;
   }
 
   .hero-image {
@@ -171,21 +171,36 @@
   
   .hero-text .subtitle {
     font-size: 1.2rem;
+
   }
-  
+
+  .description{
+      text-align: justify;
+  }
+
   .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 60vw;
+    height: 60vw;
+      margin: 0;
+      margin-top: 2vh;
+      margin-bottom: 3vh;
     font-size: 3rem;
   }
 
   .profile-card {
+      width: 100%;
     padding: 20px;
+      margin: 0;
   }
 
   .arrow {
       display: none !important;
   }
+
+  .btn-contact {
+      width: 70vw;
+  }
+
 }
 
 .arrow {
