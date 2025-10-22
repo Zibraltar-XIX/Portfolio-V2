@@ -1,0 +1,4 @@
+.idea
+.vite
+./Portfolio/node_modules
+./Portfolio/.env
