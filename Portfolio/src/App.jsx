@@ -108,25 +108,21 @@ function App() {
       <div className="bloc3">
         <h1>Expériences</h1>
         <div className="experiences-container">
-
-            <Experience
-                icon="🏛️"
-                title="Agent Communal"
-                company="Mairie de Saint Georges d'Espéranche"
-                period="Juillet 2024 - Août 2024"
-                description={<>Aide à l'entretien et la gestion du village.</>}
-                technologies={[]}
-            />
-
-            <Experience
-                icon="👁️"
-                title="Développeur et Électronicien"
-                company="Lynred"
-                period="Mai 2025 - Août 2025"
-                description={<>Création d'une carte de test et de son software de contrôle associé.</>}
-                technologies={["Python", "HTML", "CSS", "Électronique"]}
-            />
-
+          {experienceData && experienceData.length > 0 ? (
+            experienceData.map((exp, index) => (
+              <Experience
+                key={index}
+                icon={exp.icon || "�"}
+                title={exp.role || "Non spécifié"}
+                company={exp.company || "Non spécifiée"}
+                period={exp.duration || "Période non spécifiée"}
+                description={exp.details || "Aucune description"}
+                technologies={exp.skills ? exp.skills.split(", ").filter(skill => skill.trim() !== "") : []}
+              />
+            ))
+          ) : (
+            <p>Aucune expérience disponible</p>
+          )}
         </div>
       </div>
     </div>
