@@ -1,4 +1,4 @@
-import '../css/skills.css'
+import '../css/bloc2.css'
 import React from 'react';
 
 function SkillsButton({ skillsData, activeSkill, setActiveSkill }) {

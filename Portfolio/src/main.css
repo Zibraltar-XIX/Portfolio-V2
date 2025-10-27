@@ -2,6 +2,8 @@
 @import './css/bloc1.css';
 @import './css/bloc2.css';
 @import './css/bloc3.css';
+@import './css/global.css';
+@import './css/annimations.css';
 
 body, html {
   margin: 0;

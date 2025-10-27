@@ -73,7 +73,7 @@ function App() {
 
 
       {/* Deuxième bloc - Compétences */}
-      <div className="bloc2">
+      <div className="secondary-block">
         <h1>Compétences</h1>
         <div className="skills-container">
           <div className="categories-list">
@@ -103,7 +103,7 @@ function App() {
 
 
       {/* Troisième bloc - Expériences */}
-      <div className="bloc3">
+      <div className="secondary-block">
         <h1>Expériences</h1>
         <div className="experiences-container">
           {experienceData && experienceData.length > 0 ? (
